@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17251f" />
+    <title>Dream House — Immobilier de prestige au Maroc</title>
+    <meta
+      name="description"
+      content="Dream House vous accompagne dans la recherche de villas, riads et appartements de prestige à Marrakech et partout au Maroc."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Dream House — Immobilier de prestige au Maroc"
+    />
+    <meta
+      property="og:description"
+      content="Des adresses choisies avec soin et un accompagnement attentif pour votre projet immobilier au Maroc."
+    />
+    <link rel="icon" href="./brand-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      document.documentElement.classList.add("js-enabled");
+    </script>
+  </head>
+  <body>
+    <header class="header" id="top">
+      <a class="brand" href="#top" aria-label="Dream House — accueil"
+        ><img src="./brand-mark.svg" alt="" /><span
+          ><b>dream house</b><small>REAL ESTATE · MOROCCO</small></span
+        ></a
+      >
+      <nav class="nav" id="mainNav" aria-label="Navigation principale">
+        <a href="#properties" data-i18n="navListings">Les biens</a
+        ><a href="#approach" data-i18n="navWhy">Notre approche</a
+        ><a href="#districts" data-feature="navDistricts">Quartiers</a
+        ><a href="#reviews" data-i18n="navReviews">Témoignages</a
+        ><a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="languages" aria-label="Langue">
+          <button data-lang="fr" aria-pressed="true">FR</button
+          ><button data-lang="en" aria-pressed="false">EN</button
+          ><button data-lang="ar" aria-pressed="false">AR</button>
+        </div>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <img
+          class="hero-photo"
+          src="./assets/photos/hero-courtyard.webp"
+          alt="Patio de riad marocain au soleil doré, bassin et arches"
+          fetchpriority="high"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">
+            <i></i
+            ><span data-i18n="heroEyebrow">Immobilier de prestige · Maroc</span>
+          </p>
+          <h1 id="heroTitle" data-i18n="heroTitle">
+            Trouvez la propriété<br />de vos <em>rêves</em><br />au Maroc.
+          </h1>
+          <p class="hero-copy" data-i18n="heroText">
+            Des adresses choisies avec soin, et un accompagnement attentif à
+            chaque étape de votre projet.
+          </p>
+          <div class="hero-buttons">
+            <a class="button gold" href="#properties"
+              ><span data-i18n="heroBrowse">Voir les biens</span><b>↗</b></a
+            ><a
+              class="button outline whatsapp-link"
+              href="https://wa.me/212772680839?text=Bonjour%20Dream%20House"
+              target="_blank"
+              rel="noreferrer"
+              ><span data-i18n="heroWhatsApp">Nous contacter sur WhatsApp</span
+              ><b>↗</b></a
+            >
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span
+            >⌖
+            <span data-i18n="demoCity"
+              >Ville de démonstration : Marrakech</span
+            ></span
+          ><a href="#story"
+            ><span data-i18n="scroll">Défiler pour découvrir</span> ↓</a
+          ><span class="coordinates">31° 37′ N · 07° 59′ W</span>
+        </div>
+      </section>
+
+      <section class="intro">
+        <span class="arch-small">⌂</span>
+        <p data-i18n="introQuote">
+          Du premier échange aux clés en main, nous ouvrons la bonne porte.
+        </p>
+        <small>— DREAM HOUSE</small>
+      </section>
+
+      <section class="story" id="story" aria-label="Notre approche">
+        <div class="story-pin">
+          <canvas id="storyCanvas" aria-hidden="true"></canvas>
+          <div class="story-shade"></div>
+          <div class="story-top">
+            <span data-i18n="storyEyebrow">L’art de trouver juste</span
+            ><span class="progress"><i id="storyProgress"></i></span
+            ><span id="storyStepCount">01 <b>/</b> 03</span>
+          </div>
+          <div class="story-copy">
+            <p class="eyebrow" data-i18n="storyEyebrow">
+              L’art de trouver juste
+            </p>
+            <h2 data-i18n="storyTitle">
+              Une adresse.<br />Une histoire.<br />La vôtre.
+            </h2>
+            <p data-i18n="storyText">
+              Du premier échange aux clés en main, nous ouvrons la bonne porte.
+            </p>
+            <div class="story-points">
+              <div class="story-point active">
+                <small>01</small
+                ><span data-i18n="storyOne">Emplacements premium</span>
+              </div>
+              <div class="story-point">
+                <small>02</small
+                ><span data-i18n="storyTwo">Visites sur rendez-vous</span>
+              </div>
+              <div class="story-point">
+                <small>03</small
+                ><span data-i18n="storyThree">Accompagnement de A à Z</span>
+              </div>
+            </div>
+          </div>
+          <div class="story-bottom">
+            <span>DREAM HOUSE · MOROCCO</span
+            ><span>SCROLL TO FEEL THE PLACE</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="properties section" id="properties">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">
+              <i></i
+              ><span data-i18n="propertiesEyebrow">Sélection Dream House</span>
+            </p>
+            <h2 data-i18n="propertiesTitle">
+              Des lieux rares,<br />choisis pour vous.
+            </h2>
+          </div>
+          <p data-i18n="propertiesText">
+            Villas, riads et appartements singuliers aux quatre coins du Maroc.
+          </p>
+        </div>
+        <form class="filters" id="filterForm">
+          <strong data-i18n="filterTitle">Votre prochaine adresse</strong>
+          <label
+            ><small data-i18n="cityLabel">Ville</small
+            ><select id="cityFilter">
+              <option value="all" data-i18n="allCities">
+                Toutes les villes
+              </option>
+              <option value="Marrakech">Marrakech</option>
+              <option value="Casablanca">Casablanca</option>
+              <option value="Rabat">Rabat</option>
+              <option value="Tanger">Tanger</option>
+            </select></label
+          >
+          <label
+            ><small data-i18n="typeLabel">Type de bien</small
+            ><select id="typeFilter">
+              <option value="all" data-i18n="allTypes">Tous les biens</option>
+              <option value="villa" data-i18n="villa">Villa</option>
+              <option value="riad" data-i18n="riad">Riad</option>
+              <option value="apartment" data-i18n="apartment">
+                Appartement
+              </option>
+              <option value="land" data-i18n="land">Terrain</option>
+            </select></label
+          >
+          <label
+            ><small data-i18n="budgetLabel">Budget maximum</small
+            ><select id="budgetFilter">
+              <option value="all" data-i18n="allBudgets">
+                Tous les budgets
+              </option>
+              <option value="1000000">1 000 000 MAD</option>
+              <option value="5000000">5 000 000 MAD</option>
+              <option value="10000000">10 000 000 MAD</option>
+              <option value="25000000">25 000 000 MAD</option>
+            </select></label
+          >
+          <label
+            ><small data-i18n="projectLabel">Projet</small
+            ><select id="dealFilter">
+              <option value="all" data-i18n="allDeals">
+                Achat ou location
+              </option>
+              <option value="buy" data-i18n="buy">Achat</option>
+              <option value="rent" data-i18n="rent">Location</option>
+            </select></label
+          >
+          <button class="button dark" type="submit">
+            <span data-i18n="search">Rechercher</span> ↗
+          </button>
+        </form>
+        <p class="demo-note" data-i18n="demoNote">
+          Annonces et prix de démonstration, non vérifiés. L’effet 3D est une
+          animation des photos 2D, pas une visite réelle.
+        </p>
+        <div class="result-bar">
+          <span id="resultCount">6 biens</span
+          ><button type="button" id="resetFilters" data-i18n="reset">
+            Effacer les filtres
+          </button>
+        </div>
+        <p class="no-results" id="noResults" hidden data-i18n="noResults">
+          Aucun bien ne correspond à ces critères.
+        </p>
+        <div class="property-grid" id="propertyGrid">
+          <article
+            class="property-card"
+            tabindex="0"
+            data-city="Marrakech"
+            data-kind="villa"
+            data-deal="buy"
+            data-price="8900000"
+            data-name="Villa Alizé"
+            data-img="./assets/photos/villa-palmeraie.webp"
+          >
+            <div class="card-image">
+              <img
+                src="./assets/photos/villa-palmeraie.webp"
+                alt="Villa de style marocain bordée de palmiers"
+                loading="lazy"
+              /><span class="tag" data-i18n="villa">Villa</span
+              ><span class="card-arrow">↗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <div>
+                  <small data-city-label="Marrakech">Marrakech</small>
+                  <h3>Villa Alizé</h3>
+                </div>
+                <span data-deal-label="buy">Achat</span>
+              </div>
+              <p class="price" data-price-display="8900000">8 900 000 MAD</p>
+              <div class="specs">
+                <span>⌂ 4 <small data-i18n="bedrooms">chambres</small></span
+                ><span
+                  >◌ 3 <small data-i18n="baths">salles de bains</small></span
+                ><span>↔ 390 m²</span>
+              </div>
+              <button class="details" data-detail>
+                <span data-i18n="details">Voir le détail</span><b>↗</b>
+              </button>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            tabindex="0"
+            data-city="Marrakech"
+            data-kind="riad"
+            data-deal="buy"
+            data-price="6400000"
+            data-name="Riad Sienna"
+            data-img="./assets/photos/riad-courtyard.webp"
+          >
+            <div class="card-image">
+              <img
+                src="./assets/photos/riad-courtyard.webp"
+                alt="Patio de riad marocain avec bassin et arches"
+                loading="lazy"
+              /><span class="tag">Riad</span><span class="card-arrow">↗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <div>
+                  <small data-city-label="Marrakech">Marrakech</small>
+                  <h3>Riad Sienna</h3>
+                </div>
+                <span data-deal-label="buy">Achat</span>
+              </div>
+              <p class="price" data-price-display="6400000">6 400 000 MAD</p>
+              <div class="specs">
+                <span>⌂ 5 <small data-i18n="bedrooms">chambres</small></span
+                ><span
+                  >◌ 4 <small data-i18n="baths">salles de bains</small></span
+                ><span>↔ 310 m²</span>
+              </div>
+              <button class="details" data-detail>
+                <span data-i18n="details">Voir le détail</span><b>↗</b>
+              </button>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            tabindex="0"
+            data-city="Casablanca"
+            data-kind="apartment"
+            data-deal="rent"
+            data-price="24000"
+            data-name="Appartement Atlas"
+            data-img="./assets/photos/riad-suite.webp"
+          >
+            <div class="card-image">
+              <img
+                src="./assets/photos/riad-suite.webp"
+                alt="Chambre lumineuse aux matières et motifs marocains"
+                loading="lazy"
+              /><span class="tag" data-i18n="apartment">Appartement</span
+              ><span class="card-arrow">↗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <div>
+                  <small data-city-label="Casablanca">Casablanca</small>
+                  <h3>Appartement Atlas</h3>
+                </div>
+                <span data-deal-label="rent">Location</span>
+              </div>
+              <p class="price" data-price-display="24000">24 000 MAD / mois</p>
+              <div class="specs">
+                <span>⌂ 2 <small data-i18n="bedrooms">chambres</small></span
+                ><span
+                  >◌ 2 <small data-i18n="baths">salles de bains</small></span
+                ><span>↔ 128 m²</span>
+              </div>
+              <button class="details" data-detail>
+                <span data-i18n="details">Voir le détail</span><b>↗</b>
+              </button>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            tabindex="0"
+            data-city="Rabat"
+            data-kind="villa"
+            data-deal="buy"
+            data-price="12800000"
+            data-name="Maison Ocre"
+            data-img="./assets/photos/villa-garden.webp"
+          >
+            <div class="card-image">
+              <img
+                src="./assets/photos/villa-garden.webp"
+                alt="Villa contemporaine entourée d’un jardin luxuriant"
+                loading="lazy"
+              /><span class="tag" data-i18n="villa">Villa</span
+              ><span class="card-arrow">↗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <div>
+                  <small data-city-label="Rabat">Rabat</small>
+                  <h3>Maison Ocre</h3>
+                </div>
+                <span data-deal-label="buy">Achat</span>
+              </div>
+              <p class="price" data-price-display="12800000">12 800 000 MAD</p>
+              <div class="specs">
+                <span>⌂ 5 <small data-i18n="bedrooms">chambres</small></span
+                ><span
+                  >◌ 4 <small data-i18n="baths">salles de bains</small></span
+                ><span>↔ 460 m²</span>
+              </div>
+              <button class="details" data-detail>
+                <span data-i18n="details">Voir le détail</span><b>↗</b>
+              </button>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            tabindex="0"
+            data-city="Tanger"
+            data-kind="riad"
+            data-deal="rent"
+            data-price="32000"
+            data-name="Riad des Arches"
+            data-img="./assets/photos/riad-salon.webp"
+          >
+            <div class="card-image">
+              <img
+                src="./assets/photos/riad-salon.webp"
+                alt="Salon de riad décoré dans un style marocain traditionnel"
+                loading="lazy"
+              /><span class="tag">Riad</span><span class="card-arrow">↗</span>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <div>
+                  <small data-city-label="Tanger">Tanger</small>
+                  <h3>Riad des Arches</h3>
+                </div>
+                <span data-deal-label="rent">Location</span>
+              </div>
+              <p class="price" data-price-display="32000">32 000 MAD / mois</p>
+              <div class="specs">
+                <span>⌂ 3 <small data-i18n="bedrooms">chambres</small></span
+                ><span
+                  >◌ 2 <small data-i18n="baths">salles de bains</small></span
+                ><span>↔ 170 m²</span>
+              </div>
+              <button class="details" data-detail>
+                <span data-i18n="details">Voir le détail</span><b>↗</b>
+              </button>
+            </div>
+          </article>
+          <article
+            class="property-card"
+            tabindex="0"
+            data-city="Marrakech"
+            data-kind="land"
+            data-deal="buy"
+            data-price="2900000"
+            data-name="Terrain Palmier"
+            data-img=""
+          >
+            <div class="card-image land-card">
+              <span class="land-arch">⌂</span
+              ><span class="tag" data-i18n="land">Terrain</span
+              ><span class="card-arrow">↗</span
+              ><small>DREAM HOUSE · VISUEL D’EXEMPLE</small>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <div>
+                  <small data-city-label="Marrakech">Marrakech</small>
+                  <h3>Terrain Palmier</h3>
+                </div>
+                <span data-deal-label="buy">Achat</span>
+              </div>
+              <p class="price" data-price-display="2900000">2 900 000 MAD</p>
+              <div class="specs"><span>↔ 620 m²</span></div>
+              <button class="details" data-detail>
+                <span data-i18n="details">Voir le détail</span><b>↗</b>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="journey section"
+        id="project"
+        aria-labelledby="journeyTitle"
+      >
+        <div class="journey-intro">
+          <p class="eyebrow">
+            <i></i
+            ><span data-feature="journeyEyebrow"
+              >Un parcours clair, à votre rythme</span
+            >
+          </p>
+          <h2 id="journeyTitle" data-feature="journeyTitle">
+            Votre projet en 90 secondes.
+          </h2>
+          <p data-feature="journeyIntro">
+            Quelques repères pour orienter la recherche. Rien n’est enregistré
+            sur ce site.
+          </p>
+          <strong class="signature-line" data-feature="signature"
+            >Le bon quartier. Le bon bien. Un parcours clair.</strong
+          >
+        </div>
+        <div class="journey-card">
+          <div class="journey-progress" aria-live="polite">
+            <span
+              ><span data-feature="step">Étape</span>
+              <b id="journeyStepNumber">01</b> / 03</span
+            >
+            <div><i class="active"></i><i></i><i></i></div>
+          </div>
+          <form id="journeyForm">
+            <fieldset class="journey-stage">
+              <legend data-feature="journeyStepOne">
+                01 — Où et quel projet ?
+              </legend>
+              <label
+                ><span data-feature="cityLabel">Ville recherchée</span
+                ><select id="journeyCity" required>
+                  <option value="Marrakech">Marrakech</option>
+                  <option value="Casablanca">Casablanca</option>
+                  <option value="Rabat">Rabat</option>
+                  <option value="Tanger">Tanger</option>
+                </select></label
+              >
+              <label
+                ><span data-feature="dealLabel">Votre projet</span
+                ><select id="journeyDeal">
+                  <option value="buy" data-feature="buy">Acheter</option>
+                  <option value="rent" data-feature="rent">Louer</option>
+                </select></label
+              >
+              <label
+                ><span data-feature="kindLabel">Type de bien</span
+                ><select id="journeyKind">
+                  <option value="all" data-feature="anyKind">À définir</option>
+                  <option value="villa" data-feature="villa">Villa</option>
+                  <option value="riad" data-feature="riad">Riad</option>
+                  <option value="apartment" data-feature="apartment">
+                    Appartement
+                  </option>
+                  <option value="land" data-feature="land">Terrain</option>
+                </select></label
+              >
+            </fieldset>
+            <fieldset class="journey-stage" hidden>
+              <legend data-feature="journeyStepTwo">
+                02 — Budget et échéance
+              </legend>
+              <label
+                ><span data-feature="budgetLabel">Budget maximum indicatif</span
+                ><select id="journeyBudget">
+                  <option value="all" data-feature="anyBudget">
+                    À définir
+                  </option>
+                  <option value="1000000" data-feature="budget1">
+                    Jusqu’à 1 000 000 MAD
+                  </option>
+                  <option value="5000000" data-feature="budget5">
+                    Jusqu’à 5 000 000 MAD
+                  </option>
+                  <option value="10000000" data-feature="budget10">
+                    Jusqu’à 10 000 000 MAD
+                  </option>
+                  <option value="25000000" data-feature="budget25">
+                    Jusqu’à 25 000 000 MAD
+                  </option>
+                </select></label
+              >
+              <label
+                ><span data-feature="timingLabel">Votre échéance</span
+                ><select id="journeyTiming">
+                  <option value="flexible" data-feature="flexible">
+                    À définir ensemble
+                  </option>
+                  <option value="threeMonths" data-feature="threeMonths">
+                    Dans les 3 mois
+                  </option>
+                  <option value="sixMonths" data-feature="sixMonths">
+                    Dans les 6 mois
+                  </option>
+                  <option value="later" data-feature="later">Plus tard</option>
+                </select></label
+              >
+            </fieldset>
+            <fieldset class="journey-stage" hidden>
+              <legend data-feature="journeyStepThree">
+                03 — Usage et visite
+              </legend>
+              <label
+                ><span data-feature="useLabel">Usage envisagé</span
+                ><select id="journeyUse">
+                  <option value="residence" data-feature="residence">
+                    Résidence principale
+                  </option>
+                  <option value="secondHome" data-feature="secondHome">
+                    Pied-à-terre
+                  </option>
+                  <option value="rentalProject" data-feature="rentalProject">
+                    Projet locatif à discuter
+                  </option>
+                </select></label
+              >
+              <fieldset class="visit-choice">
+                <legend data-feature="visitLabel">
+                  Mode de visite souhaité
+                </legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="journeyVisit"
+                    value="onsite"
+                    checked
+                  /><span data-feature="onsite">Visite sur place</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="journeyVisit"
+                    value="remote"
+                  /><span data-feature="remote">Je suis à distance</span></label
+                >
+              </fieldset>
+            </fieldset>
+            <div class="journey-controls">
+              <button
+                class="button light"
+                type="button"
+                id="journeyBack"
+                hidden
+              >
+                <span data-feature="previous">Retour</span></button
+              ><button class="button dark" type="submit">
+                <span id="journeyNextLabel" data-feature="next">Continuer</span
+                ><b>↗</b>
+              </button>
+            </div>
+            <p class="journey-privacy" data-feature="privacy">
+              Aucune donnée n’est sauvegardée. Vous choisissez si vous souhaitez
+              ouvrir WhatsApp.
+            </p>
+          </form>
+          <div class="journey-results" id="journeyResults" hidden>
+            <h3 data-feature="completedTitle">
+              Votre première sélection est prête.
+            </h3>
+            <p data-feature="completedText">
+              Les annonces ci-dessous restent des exemples à vérifier.
+            </p>
+            <p class="journey-summary" id="journeySummary"></p>
+            <div class="journey-result-actions">
+              <a class="button dark" href="#properties" id="journeyShowResults"
+                ><span data-feature="showResults"
+                  >Voir les biens correspondants</span
+                >
+                ↗</a
+              ><a
+                class="button light"
+                href="#contact"
+                id="journeyContact"
+                target="_blank"
+                rel="noreferrer"
+                ><span data-feature="messageWhatsApp"
+                  >Transmettre mon brief sur WhatsApp</span
+                >
+                ↗</a
+              >
+            </div>
+            <button
+              class="text-button"
+              type="button"
+              id="journeyRestart"
+              data-feature="restart"
+            >
+              Modifier mes réponses
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="districts section"
+        id="districts"
+        aria-labelledby="districtsTitle"
+      >
+        <div class="district-head">
+          <p class="eyebrow">
+            <i></i
+            ><span data-feature="districtsEyebrow">Le carnet Dream House</span>
+          </p>
+          <h2 id="districtsTitle" data-feature="districtsTitle">
+            Commencer par le quartier.
+          </h2>
+          <p data-feature="districtsIntro">
+            Des repères culturels sourcés pour découvrir Marrakech.
+          </p>
+          <strong class="signature-line" data-feature="signature"
+            >Le bon quartier. Le bon bien. Un parcours clair.</strong
+          >
+        </div>
+        <p class="district-demo">
+          <span>⌖</span
+          ><span data-feature="districtDemo"
+            >Sélection éditoriale de démonstration — à compléter par l’équipe
+            locale avant publication.</span
+          >
+        </p>
+        <div class="district-grid">
+          <article class="district-card" data-district="medina">
+            <div class="district-image">
+              <img
+                src="./assets/photos/riad-medina.webp"
+                alt="Visuel d’inspiration, pas une photo certifiée de la médina"
+                loading="lazy"
+              /><span data-feature="medinaTag">Repère patrimonial</span
+              ><small data-feature="districtInspiration"
+                >Visuel d’inspiration — ne représente pas nécessairement ce
+                quartier.</small
+              >
+            </div>
+            <div class="district-content">
+              <span class="district-index">01 · MARRAKECH</span>
+              <h3 data-feature="medinaTitle">Médina</h3>
+              <p data-feature="medinaBody">
+                Un repère patrimonial et architectural.
+              </p>
+              <a
+                class="source-link"
+                href="https://whc.unesco.org/en/list/331/"
+                target="_blank"
+                rel="noreferrer"
+                data-feature="unescoSource"
+                >Fiche UNESCO ↗</a
+              ><a class="district-cta" href="#contact" data-area-ask="medina"
+                ><span data-feature="discover"
+                  >Demander les biens disponibles</span
+                ><b>↗</b></a
+              >
+            </div>
+          </article>
+          <article class="district-card" data-district="gueliz">
+            <div class="district-image">
+              <img
+                src="./assets/photos/riad-suite.webp"
+                alt="Visuel d’inspiration, pas une photo certifiée de Guéliz"
+                loading="lazy"
+              /><span data-feature="guelizTag">Repère culturel</span
+              ><small data-feature="districtInspiration"
+                >Visuel d’inspiration — ne représente pas nécessairement ce
+                quartier.</small
+              >
+            </div>
+            <div class="district-content">
+              <span class="district-index">02 · MARRAKECH</span>
+              <h3 data-feature="guelizTitle">Guéliz</h3>
+              <p data-feature="guelizBody">Un repère culturel à explorer.</p>
+              <a
+                class="source-link"
+                href="https://visitmarrakech.com/en/the-7-must-see-gardens-of-marrakech-al-bahja/"
+                target="_blank"
+                rel="noreferrer"
+                data-feature="guelizSource"
+                >Guide officiel de Marrakech ↗</a
+              ><a class="district-cta" href="#contact" data-area-ask="gueliz"
+                ><span data-feature="discover"
+                  >Demander les biens disponibles</span
+                ><b>↗</b></a
+              >
+            </div>
+          </article>
+          <article class="district-card" data-district="palmeraie">
+            <div class="district-image">
+              <img
+                src="./assets/photos/villa-palmeraie.webp"
+                alt="Visuel d’inspiration, pas une photo certifiée de la Palmeraie"
+                loading="lazy"
+              /><span data-feature="palmeraieTag">Repère paysager</span
+              ><small data-feature="districtInspiration"
+                >Visuel d’inspiration — ne représente pas nécessairement ce
+                quartier.</small
+              >
+            </div>
+            <div class="district-content">
+              <span class="district-index">03 · MARRAKECH</span>
+              <h3 data-feature="palmeraieTitle">Palmeraie</h3>
+              <p data-feature="palmeraieBody">
+                Une oasis de palmiers au nord de la médina.
+              </p>
+              <a
+                class="source-link"
+                href="https://visitmarrakech.com/en/listing/the-Palm-grove/"
+                target="_blank"
+                rel="noreferrer"
+                data-feature="palmeraieSource"
+                >Guide officiel de Marrakech ↗</a
+              ><a class="district-cta" href="#contact" data-area-ask="palmeraie"
+                ><span data-feature="discover"
+                  >Demander les biens disponibles</span
+                ><b>↗</b></a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="why section" id="approach">
+        <div class="why-photo">
+          <img
+            src="./assets/photos/villa-pool.webp"
+            alt="Villa contemporaine éclairée au crépuscule"
+            loading="lazy"
+          /><span>ARCHITECTURE · LIFESTYLE</span>
+        </div>
+        <div>
+          <p class="eyebrow">
+            <i></i><span data-i18n="whyEyebrow">La différence Dream House</span>
+          </p>
+          <h2 data-i18n="whyTitle">
+            Un regard local.<br />Une attention entière.
+          </h2>
+          <p class="why-lead" data-i18n="whyText">
+            Chaque projet mérite de la clarté, du temps et les bons
+            interlocuteurs.
+          </p>
+          <div class="why-list">
+            <article>
+              <b>01</b>
+              <div>
+                <h3 data-i18n="whyOne">Expertise locale</h3>
+                <p data-i18n="whyOneText">
+                  Une connaissance fine des quartiers et du marché marocain.
+                </p>
+              </div>
+            </article>
+            <article>
+              <b>02</b>
+              <div>
+                <h3 data-i18n="whyTwo">Accompagnement juridique</h3>
+                <p data-i18n="whyTwoText">
+                  Des repères clairs et les bons professionnels à chaque étape.
+                </p>
+              </div>
+            </article>
+            <article>
+              <b>03</b>
+              <div>
+                <h3 data-i18n="whyThree">MRE & acheteurs internationaux</h3>
+                <p data-i18n="whyThreeText">
+                  Un accompagnement à distance, pensé pour vos démarches.
+                </p>
+              </div>
+            </article>
+            <article>
+              <b>04</b>
+              <div>
+                <h3 data-i18n="whyFour">Présents après les clés</h3>
+                <p data-i18n="whyFourText">
+                  Un suivi attentif pour faciliter votre installation.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section" id="reviews">
+        <div class="review-head">
+          <p class="eyebrow">
+            <i></i
+            ><span data-i18n="reviewEyebrow">Ils nous font confiance</span>
+          </p>
+          <h2 data-i18n="reviewTitle">L’essentiel, c’est la rencontre.</h2>
+          <p data-i18n="reviewNote">
+            Six emplacements d’avis de démonstration — à remplacer par des
+            retours clients vérifiés.
+          </p>
+        </div>
+        <div class="review-card" aria-live="polite">
+          <span class="quote">“</span>
+          <blockquote id="reviewText">
+            « À compléter avec un retour client vérifié sur la qualité de
+            l’accompagnement. »
+          </blockquote>
+          <div>
+            <strong data-i18n="reviewAuthor">Avis à renseigner</strong
+            ><small data-i18n="reviewRole">Témoignage de démonstration</small>
+          </div>
+          <div class="review-controls">
+            <span id="reviewCount">01 / 06</span
+            ><button id="reviewPrev" aria-label="Avis précédent">←</button
+            ><button id="reviewNext" aria-label="Avis suivant">→</button>
+          </div>
+        </div>
+        <div class="review-dots" id="reviewDots"></div>
+      </section>
+
+      <section
+        class="quick-contact section"
+        id="quick-contact"
+        aria-labelledby="quickContactTitle"
+      >
+        <div class="quick-contact-inner">
+          <div class="quick-contact-copy">
+            <p class="eyebrow">
+              <i></i><span data-feature="quickEyebrow">Contact rapide</span>
+            </p>
+            <h2 id="quickContactTitle" data-feature="quickTitle">
+              Un projet en tête ? Parlons-en.
+            </h2>
+            <p data-feature="quickText">
+              Laissez quelques coordonnées ou appelez-nous directement.
+            </p>
+            <a class="quick-contact-phone" href="tel:+212772680839">
+              <span data-feature="quickCall">Appeler Dream House</span>
+              <strong dir="ltr">07 72 68 08 39</strong>
+            </a>
+          </div>
+          <form class="quick-contact-card" id="quickContactForm">
+            <div class="quick-contact-fields">
+              <label>
+                <span data-feature="quickName">Votre nom</span>
+                <input
+                  name="quickName"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  data-feature-placeholder="quickNamePlaceholder"
+                  placeholder="Ex. : Amine El Fassi"
+                />
+              </label>
+              <label>
+                <span data-feature="quickPhone">Votre téléphone</span>
+                <input
+                  name="quickPhone"
+                  type="tel"
+                  autocomplete="tel"
+                  required
+                  data-feature-placeholder="quickPhonePlaceholder"
+                  placeholder="+212 ..."
+                />
+              </label>
+              <label class="quick-contact-message">
+                <span data-feature="quickMessage">Votre message</span>
+                <textarea
+                  name="quickMessage"
+                  rows="3"
+                  required
+                  data-feature-placeholder="quickMessagePlaceholder"
+                  placeholder="En quelques mots, que recherchez-vous ?"
+                ></textarea>
+              </label>
+            </div>
+            <button class="quick-contact-submit" type="submit">
+              <span data-feature="quickSend">Continuer sur WhatsApp</span
+              ><span aria-hidden="true">↗</span>
+            </button>
+            <p class="quick-contact-note" data-feature="quickPrivacy">
+              Aucune donnée n’est enregistrée sur ce site.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact-head">
+          <p class="eyebrow">
+            <i></i
+            ><span data-i18n="contactEyebrow">Parlons de votre projet</span>
+          </p>
+          <h2 data-i18n="contactTitle">
+            La bonne adresse commence par une conversation.
+          </h2>
+          <p data-i18n="contactText">
+            Dites-nous ce que vous recherchez. Nous reviendrons vers vous avec
+            attention.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <form id="contactForm">
+            <div class="form-row">
+              <label
+                ><span data-i18n="name">Votre nom</span
+                ><input
+                  required
+                  name="name"
+                  autocomplete="name"
+                  data-placeholder-fr="Ex. : Amine El Fassi"
+                  data-placeholder-en="e.g. Amine El Fassi"
+                  data-placeholder-ar="مثال: أمين الفاسي"
+                  placeholder="Ex. : Amine El Fassi" /></label
+              ><label
+                ><span data-i18n="phone">Téléphone</span
+                ><input
+                  required
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  placeholder="+212 ..."
+              /></label>
+            </div>
+            <label
+              ><span data-i18n="email">E-mail</span
+              ><input
+                required
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="vous@exemple.com" /></label
+            ><label
+              ><span data-i18n="message">Votre message</span
+              ><textarea
+                required
+                name="message"
+                rows="4"
+                data-placeholder-fr="Parlez-nous de votre projet immobilier…"
+                data-placeholder-en="Tell us about your property plans…"
+                data-placeholder-ar="أخبرنا عن مشروعك العقاري…"
+                placeholder="Parlez-nous de votre projet immobilier…"
+              ></textarea></label
+            ><button class="button dark" type="submit">
+              <span data-i18n="send">Envoyer ma demande</span> ↗
+            </button>
+            <p class="form-note" data-i18n="formNote">
+              Formulaire de démonstration : l’envoi ouvre WhatsApp sur la ligne
+              de l’agence.
+            </p>
+          </form>
+          <div class="contact-info">
+            <a class="phone" id="agencyPhone" href="tel:+212772680839"
+              ><span>07 72 68 08 39</span>↗</a
+            ><small data-i18n="phoneNote"
+              >Appeler Dream House au 07 72 68 08 39.</small
+            >
+            <div class="contact-meta">
+              <p>
+                <small data-i18n="address">Adresse</small
+                ><b data-i18n="addressSetup"
+                  >Adresse de l’agence à renseigner</b
+                >
+              </p>
+              <p>
+                <small data-i18n="hours">Horaires</small
+                ><b data-i18n="hoursSetup">Horaires à confirmer</b>
+              </p>
+            </div>
+            <iframe
+              title="Carte de situation Dream House à Marrakech"
+              loading="lazy"
+              src="https://maps.google.com/maps?q=Marrakech%2C%20Morocco&z=12&output=embed"
+            ></iframe
+            ><small id="mapNote" class="map-note" data-i18n="mapNote"
+              >Marrakech, Maroc · emplacement exact à préciser.</small
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="#top"
+        ><img src="./brand-mark.svg" alt="" /><span
+          ><b>dream house</b><small>REAL ESTATE · MOROCCO</small></span
+        ></a
+      >
+      <p data-i18n="footerLine">Le Maroc vous va si bien.</p>
+      <nav class="social">
+        <a href="#contact">Instagram ↗</a><a href="#contact">TikTok ↗</a
+        ><a href="#contact">Facebook ↗</a>
+      </nav>
+      <div class="footer-bottom">
+        <span
+          >© <span id="year"></span> DREAM HOUSE ·
+          <span data-i18n="rights">Tous droits réservés.</span></span
+        ><small data-i18n="footerNote"
+          >Coordonnées, avis et annonces d’exemple à confirmer avant
+          publication.</small
+        ><a href="#top">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+    <a
+      class="float-wa whatsapp-link"
+      href="https://wa.me/212772680839?text=Bonjour%20Dream%20House"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="WhatsApp"
+      >◉ <span data-i18n="floating">Écrire sur WhatsApp</span></a
+    >
+    <dialog id="propertyDialog" class="passport-dialog">
+      <button
+        class="dialog-close"
+        id="dialogClose"
+        aria-label="Fermer"
+        formmethod="dialog"
+      >
+        ×</button
+      ><img id="dialogImage" alt="" />
+      <div>
+        <p class="eyebrow" id="dialogLocation"></p>
+        <h2 id="dialogTitle"></h2>
+        <strong id="dialogPrice"></strong>
+        <p class="passport-demo" data-feature="passportDemo">
+          Annonce de démonstration — aucune donnée ci-dessous n’est vérifiée.
+        </p>
+        <h3 class="passport-heading" data-feature="passportEyebrow">
+          Passeport du bien
+        </h3>
+        <dl class="passport-facts" id="dialogEvidence"></dl>
+        <p class="passport-caution" data-feature="passportCaution">
+          Avant une visite ou une offre, faites confirmer les informations et
+          les documents par l’agence et les professionnels compétents.
+        </p>
+        <a
+          class="button dark whatsapp-link"
+          id="dialogContact"
+          href="#contact"
+          target="_blank"
+          rel="noreferrer"
+          ><span data-feature="passportRequest"
+            >Demander confirmation à l’agence</span
+          >
+          ↗</a
+        >
+      </div>
+    </dialog>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
